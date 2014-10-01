@@ -1,0 +1,1 @@
+[{"name":"id","type":"int(10) unsigned"},{"name":"title","type":"varchar(255)"},{"name":"body","type":"text"},{"name":"created_at","type":"timestamp"},{"name":"updated_at","type":"timestamp"}]

@@ -1,0 +1,23 @@
+@extends('layouts.scaffold')
+
+@section('main')
+
+<h1>Show {{Model}}</h1>
+
+<p>{{ link_to_route('{{models}}.index', 'Return to All {{models}}', null, array('class'=>'btn btn-lg btn-primary')) }}</p>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			{{headings}}
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			{{fields}}
+		</tr>
+	</tbody>
+</table>
+
+@stop

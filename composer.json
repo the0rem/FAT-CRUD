@@ -1,0 +1,22 @@
+{
+    "name": "theorem/fat-crud",
+    "description": "Fully automated generation of boostrap CRUD pages from database tables.",
+    "keywords": ["laravel", "crud", "artisan"],
+    "authors": [
+        {
+            "name": "shaun smekel",
+            "email": "shaun.smekel@theorem.net.au"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "mustache/mustache": "2.4.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Theorem\\FatCrud\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
