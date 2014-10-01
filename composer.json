@@ -2,6 +2,7 @@
     "name": "theorem/fat-crud",
     "description": "Fully automated generation of boostrap CRUD pages from database tables.",
     "keywords": ["laravel", "crud", "artisan"],
+    "license": "MIT",
     "authors": [
         {
             "name": "shaun smekel",
