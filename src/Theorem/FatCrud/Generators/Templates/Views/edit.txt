@@ -1,6 +1,6 @@
 @extends('layouts.scaffold')
 
-@section('main')
+@section('content')
 
 <div class="row">
     <div class="col-md-10 col-md-offset-2">

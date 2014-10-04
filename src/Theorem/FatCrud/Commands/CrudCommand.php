@@ -101,8 +101,7 @@ class CrudCommand extends Command {
 	protected function getArguments()
 	{
 		return array(
-            // array('model', InputArgument::REQUIRED, 'Name of Eloquent Model.'),
-            array('name', InputArgument::REQUIRED, 'Name of Eloquent Model.'),
+            array('name', InputArgument::REQUIRED, 'Name of database table name.'),
 		);
 	}
 

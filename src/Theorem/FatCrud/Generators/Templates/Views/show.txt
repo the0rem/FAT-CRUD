@@ -1,6 +1,6 @@
 @extends('layouts.scaffold')
 
-@section('main')
+@section('content')
 
 <h1>Show {{Model}}</h1>
 
