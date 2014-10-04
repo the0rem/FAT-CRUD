@@ -76,11 +76,9 @@ class CrudCommand extends Command {
         // $model = \App::make($this->model);
         // $model = $model->getAttributes();
 
-		// Get the model attributes
+		// Get the table attributes
         $this->fields = $this->getAllColumnsNames($this->argument('name'));
-        
-        $this->printResult(true, var_export($this->fields, true));
-        
+
         // We're going to need access to these values
         // within future commands. I'll save them
         // to temporary files to allow for that.
@@ -275,7 +273,18 @@ class CrudCommand extends Command {
             $columns = array();
 
             foreach(DB::select($query) as $column) {
-                
+
+                $excludes = [
+                    'id',
+                    'created_at',
+                    'updated_at',
+                    'deleted_at',
+                ];
+
+                if (in_array(strtolower($column->{$column_name['name']}), $excludes)) {
+                    continue(1);
+                }
+
                 $columns[] = [
                     'name' => $column->{$column_name['name']},
                     'type' => $column->{$column_name['type']}

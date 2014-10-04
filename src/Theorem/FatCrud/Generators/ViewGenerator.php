@@ -138,9 +138,7 @@ EOT;
                 $type = preg_replace('/\(.*\)$/', '', $type);
                 
             }
-            
-            
-            print $type . ' - ' . $unsigned . ' - ' . json_encode($limit) . PHP_EOL;
+
             
             // TODO: add remaining types
             switch($type)
